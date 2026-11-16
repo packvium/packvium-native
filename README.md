@@ -7,7 +7,7 @@ repository by its tagged release workflow:
 | --- | --- | --- |
 | `packvium-native-rust` — one `abi3` wheel per platform, CPython 3.9+ | [PyPI](https://pypi.org/project/packvium-native-rust/) | [`packvium-native`](https://pypi.org/project/packvium-native/), the Python backend selector |
 | `@packvium/native` and its four per-platform packages | [npm](https://www.npmjs.com/package/@packvium/native) | [`@packvium/engine`](https://www.npmjs.com/package/@packvium/engine) |
-| `packvium-ffi` — the C ABI as a shared library, with [`include/packvium.h`](include/packvium.h) | this repository's GitHub Releases | the [PHP native bridge](https://github.com/toxakara/packvium-php-bridge), and any C-compatible host |
+| `packvium-ffi` — the C ABI as a shared library, with [`include/packvium.h`](include/packvium.h) | this repository's GitHub Releases | the [PHP native bridge](https://github.com/packvium/packvium-php-bridge), and any C-compatible host |
 
 None of them is meant to be the first thing you install. Each is the fast path behind a
 package that also works without it, and gives the same answers either way.
@@ -46,7 +46,7 @@ Every wheel, npm tarball and shared library is attested by the workflow that bui
 the GitHub CLI:
 
 ```bash
-gh attestation verify libpackvium_ffi-x86_64-unknown-linux-gnu.so --repo toxakara/packvium-native
+gh attestation verify libpackvium_ffi-x86_64-unknown-linux-gnu.so --repo packvium/packvium-native
 ```
 
 npm shows the same provenance on each package page, and `npm audit signatures` checks it
@@ -98,7 +98,7 @@ attached. No registry token is stored in this repository. Changes are listed in
 [CHANGELOG.md](CHANGELOG.md).
 
 The engine itself is developed in the open in
-[packvium-rust](https://github.com/toxakara/packvium-rust); its correctness suite runs
+[packvium-rust](https://github.com/packvium/packvium-rust); its correctness suite runs
 there. This repository holds the same source so that every binary can be traced to the
 commit it was built from.
 

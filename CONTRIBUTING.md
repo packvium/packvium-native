@@ -23,7 +23,7 @@ README's table.
 **No engine changes here.** `crates/packvium-core` is the published engine's source,
 carried so that every binary is traceable to the commit it was built from. Solver
 behaviour, constraints and the request format change in
-[packvium-rust](https://github.com/toxakara/packvium-rust), where their tests live, and
+[packvium-rust](https://github.com/packvium/packvium-rust), where their tests live, and
 reach this repository from there.
 
 **A binding forwards; it does not decide.** `bindings/python`, `bindings/node` and

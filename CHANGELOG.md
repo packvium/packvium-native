@@ -5,6 +5,13 @@ PyPI, `@packvium/native` and its platform packages on npm, and the C library on 
 Releases. The format follows [Keep a Changelog](https://keepachangelog.com/1.1.0/) and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.11.0]
+
+The compiled engines rebuilt on the 1.11.0 core: bottom gussets and standing pouches, a
+certified bound for `shipping_cost` and `lowest_landed_cost`, one money ceiling (2^53 − 1),
+the shared measure grammar, a 32-vertex hull cap, and `effort_budget` limits written as `1000.0`
+read as integers. A JSON count of 2^32 no longer truncates to 0 on 32-bit targets.
+
 ## [1.10.0]
 
 The compiled engines rebuilt on the 1.10.0 core: a pallet load may overhang its deck,
