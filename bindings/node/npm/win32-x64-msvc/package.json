@@ -1,6 +1,6 @@
 {
   "name": "@packvium/native-win32-x64-msvc",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "cpu": [
     "x64"
   ],
@@ -18,10 +18,10 @@
   "homepage": "https://packvium.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/toxakara/packvium-native.git"
+    "url": "git+https://github.com/packvium/packvium-native.git"
   },
   "bugs": {
-    "url": "https://github.com/toxakara/packvium-native/issues"
+    "url": "https://github.com/packvium/packvium-native/issues"
   },
   "license": "MIT",
   "description": "Compiled Rust engine for @packvium/engine, Windows x86_64 (MSVC). Not meant to be installed directly."

@@ -3,7 +3,7 @@
   "@type": "SoftwareSourceCode",
   "name": "Packvium native engines: Python wheels, Node addons and the C library",
   "description": "Compiled Rust backend for Packvium, consumed by the packvium-native selector",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "license": "https://spdx.org/licenses/MIT",
   "author": [
     {
@@ -13,8 +13,8 @@
     }
   ],
   "url": "https://packvium.com",
-  "codeRepository": "https://github.com/toxakara/packvium-native",
-  "issueTracker": "https://github.com/toxakara/packvium-native/issues",
+  "codeRepository": "https://github.com/packvium/packvium-native",
+  "issueTracker": "https://github.com/packvium/packvium-native/issues",
   "programmingLanguage": "Rust",
   "keywords": [
     "3d-bin-packing",

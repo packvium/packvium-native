@@ -16,6 +16,6 @@ The loader in `index.js` names every binary it can load by a literal specifier, 
 a binary built for a different release than its own.
 
 Every package is published by the tagged release workflow of
-[packvium-native](https://github.com/toxakara/packvium-native) with npm provenance.
+[packvium-native](https://github.com/packvium/packvium-native) with npm provenance.
 
 Documentation: [packvium.com](https://packvium.com). Licence: MIT.

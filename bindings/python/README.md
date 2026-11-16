@@ -13,7 +13,7 @@ pip install 'packvium-native[native]' packvium
 
 Wheels are published for Linux (manylinux_2_28, x86_64 and aarch64), macOS (arm64 and
 x86_64) and Windows (x86_64). Each wheel is built by the tagged release workflow of
-[packvium-native](https://github.com/toxakara/packvium-native) and carries a build
+[packvium-native](https://github.com/packvium/packvium-native) and carries a build
 provenance attestation.
 
 The module answers the same JSON request contract as every Packvium engine:
