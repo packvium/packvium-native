@@ -5,6 +5,14 @@ PyPI, `@packvium/native` and its platform packages on npm, and the C library on 
 Releases. The format follows [Keep a Changelog](https://keepachangelog.com/1.1.0/) and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.12.0]
+
+The compiled engines rebuilt on the 1.12.0 core. The money ceiling now covers the sum of the
+containers a request can open, and commerce input integers are capped at ±(2^53 − 1). An
+unplaced item no finer reason explains is `no_feasible_placement`. `exact_small`, pinned alone,
+opens as many containers as the order needs. The release workflow now prefixes tarball paths
+with `./`, so `npm publish` reads them as files, not as GitHub repositories.
+
 ## [1.11.0]
 
 The compiled engines rebuilt on the 1.11.0 core: bottom gussets and standing pouches, a

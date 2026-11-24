@@ -289,6 +289,7 @@ jobs:
         run: |
           set -euo pipefail
           version="${GITHUB_REF_NAME#v}"
+          # `./` keeps npm from reading `packages/<file>` as a GitHub `owner/repo` shorthand.
           publish() {
             if npm view "$1@$version" version >/dev/null 2>&1; then
               echo "$1@$version is already published"
@@ -297,9 +298,9 @@ jobs:
             npm publish "$2" --provenance --access public
           }
           for platform in darwin-arm64 darwin-x64 linux-x64-gnu win32-x64-msvc; do
-            publish "@packvium/native-$platform" "packages/packvium-native-$platform-$version.tgz"
+            publish "@packvium/native-$platform" "./packages/packvium-native-$platform-$version.tgz"
           done
-          publish "@packvium/native" "packages/packvium-native-$version.tgz"
+          publish "@packvium/native" "./packages/packvium-native-$version.tgz"
 
   # Every tag gets a GitHub Release: it is where the C libraries are published, and what a
   # human and a maintenance scorer can read. It is cut whenever the build succeeded, so a
